@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>View Page</title></head>
+<body>
+    <h2>Hello {{ user }}</h2>
+    <form method="post">
+        <input name="table" placeholder="Enter table name"/>
+        <button type="submit">Load Table</button>
+    </form>
+    {{ data|safe }}
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

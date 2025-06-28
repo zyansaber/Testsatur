@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head><title>Setting Page</title></head>
+<body>
+    <h2>Welcome, {{ user }} (admin)</h2>
+    <p>Available Tables:</p>
+    <ul>{% for table in tables %}<li>{{ table }}</li>{% endfor %}</ul>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
